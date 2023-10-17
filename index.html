@@ -4,9 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
 </head>
 <body>
+    <div class="bg"></div>
+
     
+        <header class="bg-text">
+            <h1> Hogwarts School of Witchcraft and Wizardry</h1>
+            <p>Draco Dormiens Nunquam Titillandus</p>
+        </header>
+
+    <section class="mainContainer">
+        <div class="row">
+            <div class="column left">
+                <button id="myBtn">Add Book</button>
+                <div class="bookLog">
+                    <p>read:</p>
+                    <p>unread:</p>
+                    <p>total:</p>
+                </div>
+            </div>
+            <div class="column right">
+                <section class="listBook">
+                    <table class="tableBook">
+                        <tr>
+                          <th id="listTitle">Title</th>
+                          <th id="listAuthor">Author</th>
+                          <th id="listPages">Pages</th>
+                          <th id="listStatus">Status</th>
+                          <th id="removeList">Delete</th>
+                        </tr>
+                      </table>
+                </section>
+            </div>
+          </div>
+    </section>
+    
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- The Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body newBookForm">
+                <form action="">
+                    
+                        <label for="title">Title</label><br>
+                        <input type="text" id="title" name="Title" placeholder="Title"><br>
+                        <small class="msg">* Book title is required</small>
+                    
+                    
+                        <label for="author">Author</label><br>
+                        <input type="text" id="author" name="Author" placeholder="Author"><br>
+                        <small class="msg">* Book author is required</small>
+                    
+                    
+                        <label for="pages">Number of Pages</label><br>
+                        <input type="number" name="pages-count" id="pages" placeholder="Pages"> <br>
+                        <small class="msg">* Book number of pages is required</small>
+                    
+                    
+                        <label for="languages">Languages</label><br>
+                        <input type="text" name="languages" id="languages" placeholder="Languages"> <br>
+                        <small class="msg">* Book language is required</small>
+                    
+                    
+                        <label for="publishingDate">Publishing Date</label><br>
+                        <input type="date" name="publishing-date" id="publishingDate" placeholder="Publishing Date"><br>
+                        <small class="msg">* Book publishing date is required</small>
+                    
+                    
+                        <label for="book-status">Book Status</label><br>
+                        <select name="book-status" id="book-status">
+                            <option value="null" disabled selected>Did you read the book?</option>
+                            <option value="true">I already read it.</option>
+                            <option value="false">I haven't read it.</option>
+                        </select>
+                        <small class="msg">* Book reading status is required</small>
+                    
+                    <div class="addBook-btn">
+                        <button class="btn add-btn" type="submit">Add</button>
+                    
+                    </div>
+                </form>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+  
+  </div>
+
+                    
+           
+    <footer>contact</footer>
+
+    
+    
+    <script src="script.js"></script>
 </body>
 </html>
